@@ -14,4 +14,3 @@ VOLUME "/var/www/src"
 VOLUME "/var/www/templates"
 VOLUME "/var/www/tests"
 VOLUME "/var/www/vendor"
-USER 1000
