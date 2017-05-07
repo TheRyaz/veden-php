@@ -1,5 +1,4 @@
-FROM php:7.0-apache
-RUN docker-php-ext-install mysqli
+FROM php:7.0-alpine
 
 RUN a2enmod rewrite
 RUN a2enmod headers
@@ -14,3 +13,4 @@ VOLUME "/var/www/src"
 VOLUME "/var/www/templates"
 VOLUME "/var/www/tests"
 VOLUME "/var/www/vendor"
+USER 1000
